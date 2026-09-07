@@ -105,3 +105,80 @@
     width: 650px;
   }
 }
+/* ===== HERO FINAL OVERRIDE ===== */
+
+.hero {
+  position: relative !important;
+  min-height: 720px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background: #111612 !important;
+}
+
+.hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(8, 12, 9, 0.80) !important;
+  z-index: 1 !important;
+}
+
+.hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 90% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding: 80px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* LOGO BEHIND EVERYTHING */
+.hero-content > img {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 700px !important;
+  max-width: 80vw !important;
+  height: auto !important;
+  opacity: 0.16 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* TEXT ABOVE LOGO */
+.hero-content > .eyebrow,
+.hero-content > h1,
+.hero-content > .hero-copy,
+.hero-content > .hero-buttons {
+  position: relative !important;
+  z-index: 3 !important;
+  text-align: center !important;
+}
+
+.hero-content > h1 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-content > .hero-copy {
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-content > .hero-buttons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
